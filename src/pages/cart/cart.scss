@@ -1,0 +1,89 @@
+@import "../../css-config/mixins.scss";
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+  @include sm{
+    width:300px;
+    height:300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.cartItem img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+}
+.cartItem .description p{
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.countHandler button{
+  width: 60px;
+  height: 40px;
+  background-color: darkgreen;
+  font-size: 18px;
+  color: white;
+  border-width: 2px;
+  border-color: white white cyan white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.countHandler input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-weight: bolder;
+  border-width: 2px;
+  border-color: white white gainsboro white;
+  border-radius: 5px;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: 2px solid yellow;
+  border-bottom-color: cyan;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.checkout p{
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.head{
+  padding: 30px 0px;
+  @include sm{
+    margin-top: 30px;
+  }
+}
